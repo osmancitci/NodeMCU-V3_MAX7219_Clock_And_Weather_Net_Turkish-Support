@@ -1,5 +1,5 @@
 #### NodeMCU V3 MAX7219 Clock And Weather Net (Turkish Support)
-After you install the necessary library files, you can use them without any problems.
+After you install the necessary library files, you can use them without any problems..
 
 - 🔭 ESP8266WiFi.h 
 - 🔭 ArduinoJson.h 
