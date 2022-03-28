@@ -31,8 +31,8 @@ String cityID = "xxxxxx"; //Şehir https://openweathermap.org/city/xxxxxx
 
 
 // Zaman Dilimi Ayarları:
-static const char ntpServerName[] = "tr.pool.ntp.org";    //Time Zone Ayarı İçin http://www.pool.ntp.org/zone/ch
-const int timeZone = 2;                    
+static const char ntpServerName[] = "tr.pool.ntp.org";    //Time Zone Ayarı İçin http://www.pool.ntp.org/zone/tr
+const int timeZone = 0;                    
 WiFiUDP Udp;
 unsigned int localPort = 8888;              // UDP Paketlerini Dinlemek İçin Port
 time_t getNtpTime();
@@ -42,8 +42,8 @@ void sendNTPpacket(IPAddress &address);
 
 // - Timezone. - //
 // Saat Diliminize Ve Yaz Saatine Göre Düzenleyiniz.
-TimeChangeRule CEST = {"CEST", Last, Sun, Mar, 2, 120};     //Avrupa Zaman Dilimi
-TimeChangeRule CET = {"CET ", Last, Sun, Oct, 3, 60};       //Avrupa Zaman Dilimi
+TimeChangeRule CEST = {"CEST", Last, Sun, Mar, 1, 180};     //Avrupa Zaman Dilimi
+TimeChangeRule CET = {"CET ", Last, Sun, Oct, 1, 120};       //Avrupa Zaman Dilimi (Istanbul, Turkey)
 Timezone CE(CEST, CET);
 
 WiFiClient client;
