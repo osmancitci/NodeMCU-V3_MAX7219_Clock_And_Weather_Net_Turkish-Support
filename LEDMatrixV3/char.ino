@@ -78,8 +78,8 @@ unsigned char convertTurkish(unsigned char _c)
     case 179: c = 4+'~'; break;
     case 241: c = 5+'~'; break;
     case 243: c = 6+'~'; break;
-    case 156: c = 7+'~'; break;
-    case 159: c = 8+'~'; break;
+    //case 156: c = 7+'~'; break;
+    //case 159: c = 8+'~'; break;
     case 191: c = 9+'~'; break;
     case 165: c = 10+'~'; break;
     case 198: c = 11+'~'; break;
